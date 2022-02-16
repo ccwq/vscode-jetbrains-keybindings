@@ -35,6 +35,9 @@
     "url": "https://github.com/ccwq/vscode-jetbrains-keybindings/issues",
     "email": "scwqd@qq.com"
   },
+  "extensionDependencies": [
+    "mishkinf.vscode-edits-history"
+  ],
   "contributes": {
     "keybindings": [
       {
