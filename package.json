@@ -20,7 +20,9 @@
   ],
   "preview": false,
   "icon": "jetbrains_keyboard.png",
-  "extensionKind": "ui",
+  "extensionKind": [
+    "ui"
+  ],
   "activationEvents": [
     "*"
   ],
@@ -305,7 +307,7 @@
         "jetbrains": "Add Selection for Next Occurrence"
       },
       {
-        "key": "ctrl+space",
+        "key": "alt+/",
         "command": "editor.action.triggerSuggest",
         "when": "editorHasCompletionItemProvider && editorTextFocus && !editorReadonly"
       },
@@ -317,8 +319,8 @@
         "jetbrains": "Basic Code Completion"
       },
       {
-        "mac": "cmd+p",
         "key": "ctrl+p",
+        "mac": "ctrl+p",
         "command": "editor.action.triggerParameterHints",
         "when": "editorHasSignatureHelpProvider && editorTextFocus",
         "jetbrains": "Parameter info (within method call arguments)"
@@ -458,25 +460,23 @@
       {
         "key": "ctrl+e",
         "mac": "ctrl+e",
-        "command": "workbench.action.quickOpenNavigateNext",
-        "when": "inQuickOpen",
-        "jetbrains": "Recent Files"
-      },
-      {
-        "key": "ctrl+e",
-        "mac": "ctrl+e",
-        "command": "-actions.find"
-      },
-      {
-        "key": "ctrl+e",
-        "mac": "ctrl+e",
-        "command": "-workbench.action.openRecent"
-      },
-      {
-        "key": "ctrl+e",
-        "mac": "ctrl+e",
         "command": "workbench.action.openRecent"
       },
+      {
+        "key": "ctrl+z",
+        "command": "undo"
+      },
+
+      {
+        "key": "ctrl+shift+z",
+        "command": "redo"
+      },
+
+      {
+        "key": "ctrl+shift+backspace",
+        "command": "workbench.action.navigateToLastEditLocation"
+      },
+
       {
         "key": "ctrl+f12",
         "mac": "ctrl+f12",
@@ -870,26 +870,6 @@
         "jetbrains": "Refactor this (selected expressions or statements)"
       },
       {
-        "key": "alt+0",
-        "mac": "alt+0",
-        "command": "workbench.actions.view.problems",
-        "jetbrains": "Activate Messages window (Problems)"
-      },
-      {
-        "key": "alt+1",
-        "mac": "alt+1",
-        "command": "workbench.view.explorer",
-        "when": "editorFocus",
-        "jetbrains": "Open corresponding tool window (Explorer)"
-      },
-      {
-        "key": "alt+1",
-        "mac": "alt+1",
-        "command": "workbench.action.toggleSidebarVisibility",
-        "when": "!editorFocus",
-        "jetbrains": "Close corresponding tool window (Explorer)"
-      },
-      {
         "key": "alt+numpad0",
         "mac": "alt+numpad0",
         "command": "workbench.actions.view.problems",
@@ -903,53 +883,17 @@
         "jetbrains": "Open corresponding tool window (Explorer)"
       },
       {
-        "key": "alt+numpad1",
-        "mac": "alt+numpad1",
-        "command": "workbench.action.toggleSidebarVisibility",
-        "when": "!editorFocus",
-        "jetbrains": "Close corresponding tool window (Explorer)"
+        "key": "alt+numpad0",
+        "mac": "alt+numpad0",
+        "command": "workbench.actions.view.problems",
+        "jetbrains": "Activate Messages window (Problems)"
       },
-      {
-        "key": "alt+3",
-        "mac": "alt+3",
-        "command": "workbench.view.search",
-        "when": "!searchViewletVisible",
-        "jetbrains": "Open corresponding tool window (Search)"
-      },
-      {
-        "key": "alt+3",
-        "mac": "alt+3",
-        "command": "workbench.action.toggleSidebarVisibility",
-        "when": "searchViewletVisible",
-        "jetbrains": "Close corresponding tool window (Search)"
-      },
+
       {
         "key": "alt+numpad3",
         "mac": "alt+numpad3",
         "command": "workbench.view.search",
-        "when": "!searchViewletVisible",
         "jetbrains": "Open corresponding tool window (Search)"
-      },
-      {
-        "key": "alt+numpad3",
-        "mac": "alt+numpad3",
-        "command": "workbench.action.toggleSidebarVisibility",
-        "when": "searchViewletVisible",
-        "jetbrains": "Close corresponding tool window (Search)"
-      },
-      {
-        "key": "alt+5",
-        "mac": "alt+5",
-        "command": "workbench.view.debug",
-        "when": "editorFocus",
-        "jetbrains": "Open corresponding tool window (Debug)"
-      },
-      {
-        "key": "alt+5",
-        "mac": "alt+5",
-        "command": "workbench.action.toggleSidebarVisibility",
-        "when": "!editorFocus",
-        "jetbrains": "Close corresponding tool window (Debug)"
       },
       {
         "key": "alt+numpad5",
@@ -985,13 +929,6 @@
         "command": "workbench.view.git",
         "when": "editorFocus",
         "jetbrains": "Open corresponding tool window (Git)"
-      },
-      {
-        "key": "alt+numpad9",
-        "mac": "alt+numpad9",
-        "command": "workbench.action.toggleSidebarVisibility",
-        "when": "!editorFocus",
-        "jetbrains": "Close corresponding tool window (Git)"
       },
       {
         "key": "ctrl+alt+f",
@@ -1035,6 +972,30 @@
         "mac": "ctrl+shift+f12",
         "command": "workbench.action.maximizeEditor",
         "intellij": "Toggle maximizing editor"
+      },
+
+      {
+        "key": "ctrl+right",
+        "mac": "ctrl+right",
+        "command": "cursorWordEndRight"
+      },
+
+      {
+        "key": "ctrl+shift+right",
+        "mac": "ctrl+shift+right",
+        "command": "cursorWordEndRightSelect"
+      },
+
+      {
+        "key": "ctrl+left",
+        "mac": "ctrl+left",
+        "command": "cursorWordLeft"
+      },
+
+      {
+        "key": "ctrl+shift+left",
+        "mac": "ctrl+shift+left",
+        "command": "cursorWordLeftSelect"
       }
     ],
     "configuration": {
