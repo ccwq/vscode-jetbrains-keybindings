@@ -429,6 +429,12 @@
       },
 
       {
+        "key": "ctrl+shift+alt+k",
+        "command": "git.pullFrom,",
+        "tip": "更新"
+      },
+
+      {
         "key": "ctrl+f12",
         "command": "workbench.action.gotoSymbol",
         "when": "editorTextFocus",
