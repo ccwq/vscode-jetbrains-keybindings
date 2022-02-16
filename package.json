@@ -424,7 +424,7 @@
       },
 
       {
-        "key": "ctrl+shift+backspace",
+        "key": "ctrl+shift+al+backspace",
         "command": "editsHistory.moveCursorToNextEdit",
         "tip": "plugin:跳转到下一次编辑的位置"
       },
@@ -898,7 +898,7 @@
     }
   },
   "scripts": {
-    "package":"vsce package --no-yarny",
+    "package":"vsce package --no-yarn",
     "postinstall": "node ./node_modules/vscode/bin/install",
     "test": "node ./node_modules/vscode/bin/test"
   },
