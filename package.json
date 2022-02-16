@@ -419,8 +419,16 @@
 
       {
         "key": "ctrl+shift+backspace",
-        "command": "workbench.action.navigateToLastEditLocation"
+        "command": "editsHistory.moveCursorToPreviousEdit",
+        "tip": "plugin:跳转到上一次编辑的位置"
       },
+
+      {
+        "key": "ctrl+shift+backspace",
+        "command": "editsHistory.moveCursorToNextEdit",
+        "tip": "plugin:跳转到下一次编辑的位置"
+      },
+
 
       {
         "key": "ctrl+\\",
@@ -430,8 +438,8 @@
 
       {
         "key": "ctrl+shift+alt+k",
-        "command": "git.pullFrom,",
-        "tip": "更新"
+        "command": "git.pullFrom",
+        "tip": "git更新"
       },
 
       {
@@ -890,10 +898,12 @@
     }
   },
   "scripts": {
+    "package":"vsce package --no-yarny",
     "postinstall": "node ./node_modules/vscode/bin/install",
     "test": "node ./node_modules/vscode/bin/test"
   },
   "devDependencies": {
+    "vsce": "^2.6.7",
     "typescript": "^2.6.1",
     "vscode": "^1.1.6",
     "eslint": "^4.6.1",
