@@ -831,8 +831,7 @@
       },
       {
         "key": "ctrl+`",
-        "command": "workbench.action.terminal.focus",
-        "when": "!terminalFocus",
+        "command": "workbench.action.terminal.toggleTerminal",
         "jetbrains": "Opens and focuses corresponding tool window (Terminal)"
       },
       {
