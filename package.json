@@ -5,6 +5,11 @@
   "version": "0.0.0",
   "publisher": "ccwq",
   "license": "MIT",
+  "scripts": {
+    "package": "vsce package --no-yarn",
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "node ./node_modules/vscode/bin/test"
+  },
   "engines": {
     "vscode": "^1.27.2"
   },
@@ -886,11 +891,6 @@
         }
       }
     }
-  },
-  "scripts": {
-    "package": "vsce package --no-yarn",
-    "postinstall": "node ./node_modules/vscode/bin/install",
-    "test": "node ./node_modules/vscode/bin/test"
   },
   "devDependencies": {
     "vsce": "^2.6.7",
