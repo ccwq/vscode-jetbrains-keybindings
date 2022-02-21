@@ -738,9 +738,9 @@
         "jetbrains": "Push to VCS"
       },
       {
-        "key": "ctrl+t",
+        "key": "ctrl+shift+alt+k",
         "command": "git.sync",
-        "jetbrains": "Update Project from VCS"
+        "jetbrains": "Update Project from VCS和远程仓库同步"
       },
       {
         "key": "ctrl+alt+m",
