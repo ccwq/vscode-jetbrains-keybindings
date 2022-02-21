@@ -414,37 +414,30 @@
         "key": "ctrl+z",
         "command": "undo"
       },
-
       {
         "key": "ctrl+shift+z",
         "command": "redo"
       },
-
       {
         "key": "ctrl+shift+backspace",
         "command": "editsHistory.moveCursorToPreviousEdit",
         "tip": "plugin:跳转到上一次编辑的位置"
       },
-
       {
         "key": "ctrl+shift+al+backspace",
         "command": "editsHistory.moveCursorToNextEdit",
         "tip": "plugin:跳转到下一次编辑的位置"
       },
-
-
       {
         "key": "ctrl+\\",
         "command": "editor.action.jumpToBracket",
         "tip": "左右括号直接的跳转"
       },
-
       {
         "key": "ctrl+shift+alt+k",
         "command": "git.pullFrom",
         "tip": "git更新"
       },
-
       {
         "key": "ctrl+f12",
         "command": "workbench.action.gotoSymbol",
@@ -461,7 +454,6 @@
         "command": "workbench.action.previousEditor",
         "jetbrains": "Go to previous editor tab"
       },
-
       {
         "key": "alt+right",
         "command": "workbench.action.nextEditor",
@@ -792,7 +784,6 @@
         "command": "workbench.actions.view.problems",
         "jetbrains": "Activate Messages window (Problems)"
       },
-
       {
         "key": "alt+numpad3",
         "command": "workbench.view.search",
@@ -840,8 +831,9 @@
       },
       {
         "key": "ctrl+`",
-        "command": "workbench.action.selectTheme",
-        "jetbrains": "Quick switch current scheme"
+        "command": "workbench.action.terminal.focus",
+        "when": "!terminalFocus",
+        "jetbrains": "Opens and focuses corresponding tool window (Terminal)"
       },
       {
         "key": "ctrl+alt+s",
@@ -864,22 +856,18 @@
         "command": "workbench.action.maximizeEditor",
         "intellij": "Toggle maximizing editor"
       },
-
       {
         "key": "ctrl+right",
         "command": "cursorWordEndRight"
       },
-
       {
         "key": "ctrl+shift+right",
         "command": "cursorWordEndRightSelect"
       },
-
       {
         "key": "ctrl+left",
         "command": "cursorWordLeft"
       },
-
       {
         "key": "ctrl+shift+left",
         "command": "cursorWordLeftSelect"
@@ -901,7 +889,7 @@
     }
   },
   "scripts": {
-    "package":"vsce package --no-yarn",
+    "package": "vsce package --no-yarn",
     "postinstall": "node ./node_modules/vscode/bin/install",
     "test": "node ./node_modules/vscode/bin/test"
   },
