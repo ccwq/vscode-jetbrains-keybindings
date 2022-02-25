@@ -731,7 +731,7 @@
         "jetbrains": "Next Change"
       },
       {
-        "key": "ctrl+k",
+        "key": "ctrl+k k",
         "command": "git.commitAll",
         "when": "!inDebugMode && !terminalFocus",
         "jetbrains": "Commit to VCS"
@@ -835,9 +835,39 @@
         "jetbrains": "Open Preferences..."
       },
       {
-        "key": "ctrl+`",
+        "key": "ctrl+` ctrl+`",
         "command": "workbench.action.terminal.toggleTerminal",
         "jetbrains": "Opens and focuses corresponding tool window (Terminal)"
+      },
+      {
+        "key": "ctrl+` g",
+        "command": "workbench.view.scm",
+        "jetbrains": "显示git"
+      },
+      {
+        "key": "ctrl+` escape",
+        "command": "workbench.action.terminal.kill",
+        "jetbrains": "停止当前的终端实例·"
+      },
+      {
+        "key": "ctrl+` `",
+        "command": "npm-script.run",
+        "jetbrains": "限制可执行的npm scrips"
+      },
+      {
+        "key": "ctrl+` e",
+        "command": "workbench.view.explorer",
+        "jetbrains": "显示文件管理"
+      },
+      {
+        "key": "ctrl+` x",
+        "command": "workbench.view.extensions",
+        "jetbrains": "切换到扩展"
+      },
+      {
+        "key": "ctrl+` d",
+        "command": "workbench.view.debug",
+        "jetbrains": "debug"
       },
       {
         "key": "ctrl+alt+s",
