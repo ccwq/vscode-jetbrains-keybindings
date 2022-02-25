@@ -75,19 +75,19 @@
       {
         "key": "ctrl+x",
         "command": "editor.action.clipboardCutAction",
-        "--when": "editorTextFocus && !editorReadonly",
+        "when": "!terminalFocus",
         "jetbrains": "Cut current line to clipboard"
       },
       {
         "key": "ctrl+c",
         "command": "editor.action.clipboardCopyAction",
-        "--when": "editorTextFocus",
+        "when": "!terminalFocus",
         "jetbrains": "Copy current line to clipboard"
       },
       {
         "key": "ctrl+v",
         "command": "editor.action.clipboardPasteAction",
-        "--when": "editorTextFocus && !editorReadonly",
+        "when": "!terminalFocus",
         "jetbrains": "Paste"
       },
       {
@@ -857,15 +857,18 @@
       },
       {
         "key": "ctrl+right",
+        "when": "!terminalFocus",
         "command": "cursorWordEndRight"
       },
       {
         "key": "ctrl+shift+right",
+        "when": "!terminalFocus",
         "command": "cursorWordEndRightSelect"
       },
       {
         "key": "ctrl+left",
-        "command": "cursorWordLeft"
+        "command": "cursorWordLeft",
+        "when": "!terminalFocus"
       },
       {
         "key": "ctrl+shift+left",
