@@ -210,7 +210,7 @@
         "key": "ctrl+alt+numpad_divide",
         "command": "editor.action.blockComment",
         "when": "editorTextFocus && !editorReadonly",
-        "jetbrains": "Comment/uncomment with block comment"
+        "jetbrains": "Comment With Block Comment"
       },
       {
         "key": "ctrl+shift+alt+j",
