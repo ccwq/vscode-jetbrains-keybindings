@@ -725,7 +725,7 @@
         "jetbrains": "Next Change"
       },
       {
-        "key": "ctrl+k k",
+        "key": "ctrl+k ctrl+k",
         "command": "git.commitAll",
         "when": "!inDebugMode && !terminalFocus",
         "jetbrains": "Commit to VCS"
