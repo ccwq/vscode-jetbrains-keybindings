@@ -519,12 +519,6 @@
         "jetbrains": "Hide active or last active window (Terminal)"
       },
       {
-        "key": "ctrl+enter",
-        "command": "editor.action.goToDeclaration",
-        "when": "editorHasDefinitionProvider && editorTextFocus",
-        "jetbrains": "Jump Source"
-      },
-      {
         "key": "ctrl+alt+left",
         "command": "workbench.action.navigateBack",
         "jetbrains": "Navigate Back"
