@@ -335,17 +335,6 @@
         "jetbrains": "Open Quick Definition Lookup"
       },
       {
-        "key": "",
-        "command": "editor.action.previewDeclaration",
-        "when": "editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor",
-        "jetbrains": "Open quick definition lookup"
-      },
-      {
-        "key": "cmd+.",
-        "command": "editor.action.quickFix",
-        "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
-      },
-      {
         "key": "alt+enter",
         "command": "editor.action.quickFix",
         "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly",
@@ -451,7 +440,7 @@
       },
       {
         "key": "ctrl+alt+shift+n",
-        "command": "workbench.action.gotoSymbol",
+        "command": "workbench.action.showAllSymbols",
         "jetbrains": "Go to Symbol"
       },
       {
