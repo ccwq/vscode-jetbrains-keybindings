@@ -1,3 +1,8 @@
+# INSTALL
+``ext install ccwq.window-webstorm-keybindins``
+
+# ABOUT
+
 The purpose of this plugin is twofold
 
 1. Habits used in code / Habits of webstorm software
