@@ -849,7 +849,7 @@
         "jetbrains": "切换到扩展"
       },
       {
-        "key": "ctrl+` d",g
+        "key": "ctrl+` d",
         "command": "workbench.view.debug",
         "jetbrains": "debug"
       },
