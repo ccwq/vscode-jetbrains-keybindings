@@ -2,7 +2,7 @@
   "name": "window-webstorm-keybindins",
   "displayName": "JetBrains IDE Keymap Force To Windows",
   "description": "On windows and mac, the windinos version of the jetbrain shortcut key is used. fork from 'isudox/vscode-jetbrains-keybindings'",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "publisher": "ccwq",
   "license": "MIT",
   "scripts": {
@@ -909,11 +909,12 @@
     }
   },
   "devDependencies": {
-    "vsce": "^2.6.7",
-    "typescript": "^2.6.1",
-    "vscode": "^1.1.6",
-    "eslint": "^4.6.1",
+    "@types/mocha": "^2.2.42",
     "@types/node": "^7.0.43",
-    "@types/mocha": "^2.2.42"
+    "eslint": "^4.6.1",
+    "standard-version": "^9.5.0",
+    "typescript": "^2.6.1",
+    "vsce": "^2.6.7",
+    "vscode": "^1.1.6"
   }
 }
