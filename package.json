@@ -9,7 +9,8 @@
     "package": "vsce package --no-yarn",
     "postinstall": "node ./node_modules/vscode/bin/install",
     "test": "node ./node_modules/vscode/bin/test",
-    "make-change-log":"standard-version"
+    "make-change-log": "standard-version",
+    "generate-readme-api": "node build.mjs"
   },
   "engines": {
     "vscode": "^1.27.2"
@@ -718,7 +719,7 @@
         "key": "ctrl+k ctrl+k",
         "command": "git.commitAll",
         "when": "!inDebugMode && !terminalFocus",
-        "jetbrains": "Commit to VCS"
+        "jetbrains": "Commit to V"
       },
       {
         "key": "ctrl+shift+k",
