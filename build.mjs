@@ -7,11 +7,12 @@ bingdings+="| ------- | ------- | ------- |\n"
     
 bingdings += pkg.contributes.keybindings.map(rule => {
     let shortcut = `${rule.key}`;
+    shortcut = shortcut.replace(/ /g, "&nbsp;&nbsp;&nbsp;");
     shortcut = shortcut.replace(/`/g, "\\`")
-    shortcut = shortcut.replace(/ctrl/g, `<span style=color:#74ebd6>ctrl</span> `)
-    shortcut = shortcut.replace(/shift/g, `<span style=color:#8ccbde>ctrl</span> `)
-    shortcut = shortcut.replace(/alt/g, `<span style=color:#9fade5>ctrl</span> `)
-    shortcut = shortcut.replace(/\+/g, `<span style="color:#ff989c;padding:0 0.25em">+</span> `)
+    shortcut = shortcut.replace(/ctrl/g, `<span style=color:#74ebd6>ctrl</span>`)
+    shortcut = shortcut.replace(/shift/g, `<span style=color:#8ccbde>shift</span>`)
+    shortcut = shortcut.replace(/alt/g, `<span style=color:#9fade5>alt</span>`)
+    shortcut = shortcut.replace(/\+/g, `<span style="color:#ff989c;padding:0 0.125em">+</span> `)
     return `|${shortcut}|${rule.command}|${rule.jetbrains}|`
 }).join("\n")
 
