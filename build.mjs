@@ -12,7 +12,7 @@ bingdings += pkg.contributes.keybindings.map(rule => {
     shortcut = shortcut.replace(/ctrl/g, `<span style=color:#74ebd6>ctrl</span>`)
     shortcut = shortcut.replace(/shift/g, `<span style=color:#8ccbde>shift</span>`)
     shortcut = shortcut.replace(/alt/g, `<span style=color:#9fade5>alt</span>`)
-    shortcut = shortcut.replace(/\+/g, `<span style="color:#ff989c;padding:0 0.125em">+</span> `)
+    shortcut = shortcut.replace(/\+/g, `<span style="color:#ff989c;padding:0 0.125em">+</span>`)
     let condi = ""
     if (rule.when) { 
         condi = 
